@@ -36,4 +36,22 @@ textfield2.maskInput(1)
 
 ** Manual Mode **
 
+Manual mode can be used in two ways. The first way comes with a pre-built switch that allows users to manually toggle the masking of the passwords. This can be used by instantiating the MaskingSwitch object and adding it to your view.
+
+ ```
+ let customSwitch = MaskingSwitch()
+ view.addSubview(customSwitch)
+ ```
+
+The second way of using the manual mode is by calling the class function "toggle" from the TapToggle class to manually toggle the masking of text inputs. For example, this can be easily coupled with the TapGestureRecongizer to allow users to toggle the masking of passwords with a double tap of the screen.
+
+```
+let tap = UITapGestureRecognizer(target: self, action: "doubleTapped")
+tap.numberOfTapsRequired = 2
+
+    func doubleTapped() {
+       TapToggle.toggle()
+    }
+    
+```
 
