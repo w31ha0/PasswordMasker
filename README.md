@@ -2,7 +2,7 @@
 Password Masking Framework
 ==============
 
-Simple framework for masking password completely to selected input textfields when giving presentations. This framework can also be used by the developer to manually toggle the masking of passwords.
+iOS Password fields have the problem of exposing the latest character users entered for a short while.This can lead to problems during recorded presentations where viewers ca easily replay the video to re-construct the password typed into the field. This simple framework masks input textfields completely when giving presentations. This framework can also be used by the developers to manually toggle the masking of passwords.
 
 How to install
 ==============
