@@ -32,25 +32,25 @@ Usage
 Auto Mode is used if certain text inputs are desired to be masked automatically when an external display is connected to the device, such as during a presentation. On disconnecting the external display, the text inputs return to the original visiblity mode.
 
 
-Tag the UITextFields that you wish to mask automatically by calling the maskInput(1) method on them. The 1 in the parameter represents the mode of masking, which is "auto" mode in this case.
+Tag the UITextFields that you wish to mask automatically by calling the maskInput(MASKINGMODE.AUTO) method on them. The parameter represents the mode of masking, which is "auto" mode in this case.
 
 
 ```
 @IBOutlet weak var textfield2: UITextField!
 ....
-textfield2.maskInput(1)
+textfield2.maskInput(MASKINGMODE.AUTO)
 ```
 
 
 **Manual Mode**
 
-Manual mode can be used in two ways. To begin using the manual mode, call the maskInput method again on the textfields that you wish to tag, but this time with a parameter of 0 instead.
+Manual mode can be used in two ways. To begin using the manual mode, call the maskInput method again on the textfields that you wish to tag, but this time with a parameter of MASKINGMODE.MANUAL instead.
 
 
 ```
 @IBOutlet weak var textfield2: UITextField!
 ....
-textfield2.maskInput(0)
+textfield2.maskInput(MASKINGMODE.MANUAL)
 ```
 
 
@@ -74,4 +74,4 @@ tap.numberOfTapsRequired = 2
 ```
 
 
-**NOTE: These 2 manual modes of operation will only affect textfields that have been tagged with the manual mode(a parameter of 0 passed into the maskInput method). Textfields tagged with auto mode will not be affected.**
+**NOTE: These 2 manual modes of operation will only affect textfields that have been tagged with the manual mode.Textfields tagged with auto mode will not be affected.**
