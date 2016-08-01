@@ -16,12 +16,12 @@ extension UITextField {
         if !Singleton.sharedInstance.textFieldArray.contains(self){
             Singleton.sharedInstance.textFieldArray.append(self)
             Singleton.sharedInstance.colorsArray.append(self.textColor!)
-            Singleton.sharedInstance.modeArray.append(0)
+            Singleton.sharedInstance.modeArray.append(MASKINGMODE.MANUAL)
         }
         
         let index = Singleton.sharedInstance.textFieldArray.indexOf(self)
         
-        if ( mode == 1 || mode == 0) {
+        if ( mode == MASKINGMODE.AUTO || mode == MASKINGMODE.MANUAL) {
             Singleton.sharedInstance.modeArray[index!] = mode ;
         }
         
@@ -31,7 +31,7 @@ extension UITextField {
         let originalColor=Singleton.sharedInstance.colorsArray[index!]
         
         switch maskingMode {
-            case 1: //Auto mode
+            case MASKINGMODE.AUTO: //Auto mode
                 let center = NSNotificationCenter.defaultCenter()
                 center.addObserver(self, selector: #selector(maskInput), name: UIScreenDidConnectNotification, object: nil)
                 center.addObserver(self, selector: #selector(maskInput), name: UIScreenDidDisconnectNotification, object: nil)

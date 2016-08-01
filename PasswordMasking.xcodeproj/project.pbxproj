@@ -13,6 +13,7 @@
 		D868507A1D48EE2F00841D3D /* PasswordMasking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D868506F1D48EE2F00841D3D /* PasswordMasking.framework */; };
 		D868507F1D48EE2F00841D3D /* PasswordMaskingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D868507E1D48EE2F00841D3D /* PasswordMaskingTests.swift */; };
 		D86850911D48FC4100841D3D /* PasswordMasking.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86850901D48FC4100841D3D /* PasswordMasking.swift */; };
+		D87715981D4F4C7D0000E4C1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87715971D4F4C7D0000E4C1 /* Constants.swift */; };
 		D8ADC9811D4A232400D5D297 /* MaskingSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8ADC97F1D4A232400D5D297 /* MaskingSwitch.swift */; };
 		D8ADC9821D4A232400D5D297 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8ADC9801D4A232400D5D297 /* Singleton.swift */; };
 /* End PBXBuildFile section */
@@ -36,6 +37,7 @@
 		D868507E1D48EE2F00841D3D /* PasswordMaskingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordMaskingTests.swift; sourceTree = "<group>"; };
 		D86850801D48EE2F00841D3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D86850901D48FC4100841D3D /* PasswordMasking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PasswordMasking.swift; path = PasswordMasking/PasswordMasking.swift; sourceTree = "<group>"; };
+		D87715971D4F4C7D0000E4C1 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D8ADC97F1D4A232400D5D297 /* MaskingSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaskingSwitch.swift; sourceTree = SOURCE_ROOT; };
 		D8ADC9801D4A232400D5D297 /* Singleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -62,6 +64,7 @@
 		D86850651D48EE2F00841D3D = {
 			isa = PBXGroup;
 			children = (
+				D87715971D4F4C7D0000E4C1 /* Constants.swift */,
 				D867C0B41D4B8B4F00DA4DA4 /* TapToggle.swift */,
 				D86850711D48EE2F00841D3D /* PasswordMasking */,
 				D868507D1D48EE2F00841D3D /* PasswordMaskingTests */,
@@ -207,6 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D87715981D4F4C7D0000E4C1 /* Constants.swift in Sources */,
 				D8ADC9811D4A232400D5D297 /* MaskingSwitch.swift in Sources */,
 				D867C0B51D4B8B4F00DA4DA4 /* TapToggle.swift in Sources */,
 				D8ADC9821D4A232400D5D297 /* Singleton.swift in Sources */,
