@@ -9,7 +9,7 @@
 import Foundation
 
 public struct MASKINGMODE{
-    static let AUTO = 1
-    static let MANUAL = 0
+    public static let AUTO = 1
+    public static let MANUAL = 0
 
 }

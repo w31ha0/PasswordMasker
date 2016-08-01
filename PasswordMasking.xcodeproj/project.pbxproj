@@ -66,12 +66,12 @@
 			children = (
 				D87715971D4F4C7D0000E4C1 /* Constants.swift */,
 				D867C0B41D4B8B4F00DA4DA4 /* TapToggle.swift */,
-				D86850711D48EE2F00841D3D /* PasswordMasking */,
-				D868507D1D48EE2F00841D3D /* PasswordMaskingTests */,
-				D86850701D48EE2F00841D3D /* Products */,
 				D8ADC97F1D4A232400D5D297 /* MaskingSwitch.swift */,
 				D8ADC9801D4A232400D5D297 /* Singleton.swift */,
 				D86850901D48FC4100841D3D /* PasswordMasking.swift */,
+				D86850711D48EE2F00841D3D /* PasswordMasking */,
+				D868507D1D48EE2F00841D3D /* PasswordMaskingTests */,
+				D86850701D48EE2F00841D3D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
