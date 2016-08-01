@@ -7,15 +7,22 @@ Simple framework for masking password completely to selected input textfields wh
 How to install
 ==============
 
-**Manual**
-
-1. Open project in Xcode
+**Carthage**
 
 
-2. Click on project > General > Embedded Libraries > Add the PasswordMasking Framework
+1. Add the line ' github "w31ha0/PasswordMasker" "master" ' to Cartfile
 
 
-3. Import the framework via the "import PasswordMasking" line
+2. Run " carthage update --platform iOS "
+
+
+3. Open project in Xcode
+
+
+4. Click on project > General > Embedded Libraries > Add the PasswordMasking Framework from the Carthage/Build folder
+
+
+5. Import the framework via the "import PasswordMasking" line
 
 Usage
 ==============
